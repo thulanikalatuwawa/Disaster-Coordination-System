@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1535.0" spacing="20" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReportDisasterC">
+    <ImageView fx:id="logoImage" fitHeight="100" fitWidth="300"> </ImageView>
+
+    <VBox alignment="CENTER" spacing="10">
+        <TextField fx:id="FullName" promptText="Full Name"> </TextField>
+        <TextField fx:id="ContactNumber" promptText="Contact Number"> </TextField>
+        <TextField fx:id="EmailAddress" promptText="Email Address (optional)"> </TextField>
+        <TextField fx:id="NIC" promptText="NIC Number"> </TextField>
+        <TextField fx:id="Location" promptText="Street Address"> </TextField>
+        <TextField fx:id="GramaNiladhariDivision" promptText="Grama Niladhari Division"> </TextField>
+
+        <ComboBox fx:id="districtSelection" promptText="District" />
+        <ComboBox fx:id="provinceSelection" promptText="Province" />
+        <ComboBox fx:id="disasterType" promptText="Disaster Type" />
+
+        <DatePicker fx:id="incidentDate" promptText="Incident Date"> </DatePicker>
+        <TextField fx:id="incidentTime" promptText="HH:mm AM/PM"> </TextField>
+
+        <TextArea fx:id="impactDescription" promptText="Impact Description"> </TextArea>
+        <HBox alignment="TOP_CENTER" spacing="10">
+            <Label text="Affected Individuals: "> </Label>
+            <Spinner fx:id="noOfAffectedIndividuals" prefHeight="32.0" prefWidth="391.0" promptText="Injured Individuals"> </Spinner>
+        </HBox>
+        <ComboBox fx:id="urgencyLevel" prefHeight="31.0" promptText="Urgency Level"> </ComboBox>
+
+        <Button onAction="#SubmitReport" text="Submit Report" styleClass="primary-button"> </Button>
+        <Button layoutX="20" layoutY="20 " onAction="#goToSelectionPage" text="Back to Home" styleClass="primary-button" />
+    </VBox>
+</VBox>
