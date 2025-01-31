@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1535.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminSignUpC">
+    <children>
+        <ImageView fx:id="backgroundImage" fitHeight="799.0" fitWidth="717.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="775.0" layoutY="45.0" prefHeight="47.0" prefWidth="520.0" styleClass="header-label" text="Sign Up" />
+        <Label layoutX="775.0" layoutY="100.0" prefHeight="18.0" prefWidth="721.0" styleClass="header" text="Welcome to Zeylan ResQ" />
+        <TextField fx:id="fullNameField" layoutX="768.0" layoutY="221.0" prefHeight="47.0" prefWidth="698.0" styleClass="text-field-login" />
+        <PasswordField fx:id="passwordField" layoutX="768.0" layoutY="416.0" prefHeight="47.0" prefWidth="698.0" styleClass="text-field-login" />
+        <Label layoutX="768.0" layoutY="194.0" prefHeight="18.0" prefWidth="79.0" text="Full Name" />
+        <Label layoutX="768.0" layoutY="391.0" text="Password" />
+        <Button layoutX="929.0" layoutY="541.0" mnemonicParsing="false" onAction="#SignUp" prefHeight="37.0" prefWidth="118.0" styleClass="primary-button" text="Sign Up" />
+        <Button layoutX="957.0" layoutY="652.0" mnemonicParsing="false" onAction="#goToLogInPage" prefHeight="26.0" prefWidth="62.0" styleClass="primary-button-sign" text="Login" />
+        <Label layoutX="803.0" layoutY="659.0" prefHeight="18.0" prefWidth="153.0" text="Already has an account?" />
+        <TextField fx:id="emailField" layoutX="768.0" layoutY="314.0" prefHeight="47.0" prefWidth="698.0" promptText="username@gmail.com" styleClass="text-field-login" />
+        <Label layoutX="768.0" layoutY="288.0" prefHeight="18.0" prefWidth="304.0" text="Email" />
+    </children>
+</AnchorPane>

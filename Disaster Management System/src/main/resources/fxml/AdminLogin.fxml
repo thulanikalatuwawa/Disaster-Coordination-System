@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1535.0" stylesheets="@../css/styles.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminLogInC">
+   <children>
+      <ImageView fx:id="backgroundImage" fitHeight="799.0" fitWidth="717.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="775.0" layoutY="45.0" prefHeight="47.0" prefWidth="520.0" styleClass="header-label" text="Login" />
+      <Label layoutX="775.0" layoutY="103.0" prefHeight="18.0" prefWidth="721.0" styleClass="header" text="Welcome back! Please login to your account." />
+      <TextField fx:id="emailField" layoutX="768.0" layoutY="220.0" prefHeight="47.0" prefWidth="698.0" promptText="username@gmail.com" styleClass="text-field-login" />
+      <PasswordField fx:id="passwordField" layoutX="768.0" layoutY="321.0" prefHeight="47.0" prefWidth="698.0" styleClass="text-field-login" />
+      <Label layoutX="768.0" layoutY="194.0" prefHeight="18.0" prefWidth="79.0" text="User Name" />
+      <Label layoutX="768.0" layoutY="296.0" text="Password" />
+      <Button layoutX="929.0" layoutY="467.0" mnemonicParsing="false" onAction="#logInAdmin" prefHeight="37.0" prefWidth="118.0" styleClass="primary-button" text="Login" />
+      <Button layoutX="959.0" layoutY="562.0" mnemonicParsing="false" onAction="#goToSignUpPage" prefHeight="26.0" prefWidth="62.0" styleClass="primary-button-sign" text="Sign Up" />
+      <Label layoutX="887.0" layoutY="569.0" prefHeight="18.0" prefWidth="62.0" text="New User?" />
+      <Button layoutX="745.0" layoutY="731.0" mnemonicParsing="false" onAction="#goToUserSelection" styleClass="button-back" text="&lt; Back" />
+   </children>
+</AnchorPane>
